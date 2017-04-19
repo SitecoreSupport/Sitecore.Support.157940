@@ -84,7 +84,11 @@ namespace Sitecore.Support.Data.SqlServer
       ItemDefinition parent = this.GetItemDefinition(parentId, context);
       if (parent == null)
       {
-        cache.RemoveMappingsContaining("/" + string.Join("/", parentPath));
+        // Fix start:
+        // cache.RemoveMappingsContaining("/" + string.Join("/", parentPath));
+        Log.Debug($"[Sitecore.Support.157940] Calling method 'PathCache.RemoveMappingsContaining' has been skipped.");
+        // Fix ends.
+
         return null;
       }
 
