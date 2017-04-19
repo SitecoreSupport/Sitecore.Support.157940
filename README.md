@@ -1,5 +1,5 @@
 # Sitecore.Support.157940
-Data provider may clear 'PathCache' too often.
+Data provider may sometimes clear the `PathCache` too often.
 
 ## License  
 This patch is licensed under the [Sitecore Corporation A/S License for GitHub](https://github.com/sitecoresupport/Sitecore.Support.157940/blob/master/LICENSE).  
